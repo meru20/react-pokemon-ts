@@ -9,23 +9,24 @@ interface PokemonItemProps{
     pokeCard: PokemonCard;
 
 }
-const PokemonItem: React.FC<PokemonItemProps> = ({poke,pokeCard}) => {
+const PokemonItem: React.FC<PokemonItemProps> = ({poke}) => {
     let  pokeId  = useParams();
-    // const [pokemon, setPokemon] = useState<Pokemon>({
-    //     // num: '',
-    //     // name: '',
-    //     // img: '',
-    //     // type: [],
-    //     // height: '',
-    //     // weight: '',
-    //     // candy: '',
-    //     // egg: '',
-    //     // spawn_chance: '',
-    //     // avg_spawns: '',
-    //     // spawn_time:'',
-    //     // multipliers:[],
-    //     // weaknesses: [],
-    // });
+//     const [pokemon, setPokemon] = useState<Pokemon[]>({
+//         id: '',
+//         num: '',
+//         name: '',
+//         img: '',
+//         type: [],
+//         height: '',
+//         weight: '',
+//         candy: '',
+//         egg: '',
+//         spawn_chance: '',
+//         avg_spawns: '',
+//         spawn_time:'',
+//         multipliers:[],
+//         weaknesses: [],
+//    });
 
     // useEffect(() => {
     //     console.log('id',pokeId);

@@ -9,13 +9,13 @@ interface PokemonListItemProps{
 const PokemonListItem: React.FC<PokemonListItemProps> = ({poke}) => {
     return(
         <div id='pokemon-list-item'>
-            <li className='list-group-item'><img src={poke.img} alt={poke.name}/>
-            <div className='d-flex justify-content-between align-items-center'>
-            <div className="d-flex flex-row align-items-center">
+            <li className='list-group-item d-flex  flex-col  justify-content-between align-items-center'><img src={poke.img} alt={poke.name}/>
+            
+            
             <div className="ml-2">
-            <h3 className='mb-0'>{poke.name}</h3>
+            <h3 className='mb-0 ml-4'>{poke.name}</h3>
             <div className="d-flex flex-row mt-1 text-black-50">
-            <small className='ml-2'>height:{poke.height} | weight: {poke.weight}</small>
+            <small className='ml-1 mt-3'>height:{poke.height} | weight: {poke.weight}</small>
 
             </div>
 
@@ -26,8 +26,8 @@ const PokemonListItem: React.FC<PokemonListItemProps> = ({poke}) => {
             View Details
           </Link>
             {/* <button className='btn btn-primary'>view details</button> */}
-            </div>
-            </div>
+            
+           
             {/* <h6>height:{poke.height} | weight: {poke.weight}</h6> */}
             </li>
             

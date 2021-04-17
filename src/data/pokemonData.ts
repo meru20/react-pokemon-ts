@@ -10,7 +10,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.71 m",
     "weight": "6.9 kg",
     "candy": "Bulbasaur Candy",
-   
+    "candy_count": 25,
     "egg": "2 km",
     "spawn_chance": 0.69,
     "avg_spawns": 69,
@@ -22,7 +22,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
- 
+    "next_evolution": [{
+      "num": "002",
+      "name": "Ivysaur"
+    }, {
+      "num": "003",
+      "name": "Venusaur"
+    }]
   }, {
     "id": 2,
     "num": "002",
@@ -35,7 +41,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "13.0 kg",
     "candy": "Bulbasaur Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.042,
     "avg_spawns": 4.2,
@@ -50,7 +56,14 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "001",
+      "name": "Bulbasaur"
+    }],
+    "next_evolution": [{
+      "num": "003",
+      "name": "Venusaur"
+    }]
   }, {
     "id": 3,
     "num": "003",
@@ -74,7 +87,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "001",
+      "name": "Bulbasaur"
+    }, {
+      "num": "002",
+      "name": "Ivysaur"
+    }]
   }, {
     "id": 4,
     "num": "004",
@@ -86,7 +105,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "8.5 kg",
     "candy": "Charmander Candy",
-    
+    "candy_count": 25,
     "egg": "2 km",
     "spawn_chance": 0.253,
     "avg_spawns": 25.3,
@@ -97,7 +116,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "005",
+      "name": "Charmeleon"
+    }, {
+      "num": "006",
+      "name": "Charizard"
+    }]
   }, {
     "id": 5,
     "num": "005",
@@ -109,7 +134,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.09 m",
     "weight": "19.0 kg",
     "candy": "Charmander Candy",
-   
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.012,
     "avg_spawns": 1.2,
@@ -120,8 +145,14 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-    
-  
+    "prev_evolution": [{
+      "num": "004",
+      "name": "Charmander"
+    }],
+    "next_evolution": [{
+      "num": "006",
+      "name": "Charizard"
+    }]
   }, {
     "id": 6,
     "num": "006",
@@ -144,7 +175,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "004",
+      "name": "Charmander"
+    }, {
+      "num": "005",
+      "name": "Charmeleon"
+    }]
   }, {
     "id": 7,
     "num": "007",
@@ -156,7 +193,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "9.0 kg",
     "candy": "Squirtle Candy",
-    
+    "candy_count": 25,
     "egg": "2 km",
     "spawn_chance": 0.58,
     "avg_spawns": 58,
@@ -166,7 +203,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "next_evolution": [{
+      "num": "008",
+      "name": "Wartortle"
+    }, {
+      "num": "009",
+      "name": "Blastoise"
+    }]
   }, {
     "id": 8,
     "num": "008",
@@ -178,7 +221,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "22.5 kg",
     "candy": "Squirtle Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.034,
     "avg_spawns": 3.4,
@@ -188,8 +231,14 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
-  
+    "prev_evolution": [{
+      "num": "007",
+      "name": "Squirtle"
+    }],
+    "next_evolution": [{
+      "num": "009",
+      "name": "Blastoise"
+    }]
   }, {
     "id": 9,
     "num": "009",
@@ -210,7 +259,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-   
+    "prev_evolution": [{
+      "num": "007",
+      "name": "Squirtle"
+    }, {
+      "num": "008",
+      "name": "Wartortle"
+    }]
   }, {
     "id": 10,
     "num": "010",
@@ -222,7 +277,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "2.9 kg",
     "candy": "Caterpie Candy",
-   
+    "candy_count": 12,
     "egg": "2 km",
     "spawn_chance": 3.032,
     "avg_spawns": 303.2,
@@ -233,7 +288,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Rock"
     ],
-  
+    "next_evolution": [{
+      "num": "011",
+      "name": "Metapod"
+    }, {
+      "num": "012",
+      "name": "Butterfree"
+    }]
   }, {
     "id": 11,
     "num": "011",
@@ -245,7 +306,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.71 m",
     "weight": "9.9 kg",
     "candy": "Caterpie Candy",
-   
+    "candy_count": 50,
     "egg": "Not in Eggs",
     "spawn_chance": 0.187,
     "avg_spawns": 18.7,
@@ -259,7 +320,14 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "010",
+      "name": "Caterpie"
+    }],
+    "next_evolution": [{
+      "num": "012",
+      "name": "Butterfree"
+    }]
   }, {
     "id": 12,
     "num": "012",
@@ -284,7 +352,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Rock"
     ],
- 
+    "prev_evolution": [{
+      "num": "010",
+      "name": "Caterpie"
+    }, {
+      "num": "011",
+      "name": "Metapod"
+    }]
   }, {
     "id": 13,
     "num": "013",
@@ -297,7 +371,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "3.2 kg",
     "candy": "Weedle Candy",
-   
+    "candy_count": 12,
     "egg": "2 km",
     "spawn_chance": 7.12,
     "avg_spawns": 712,
@@ -312,7 +386,13 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "014",
+      "name": "Kakuna"
+    }, {
+      "num": "015",
+      "name": "Beedrill"
+    }]
   }, {
     "id": 14,
     "num": "014",
@@ -325,7 +405,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "10.0 kg",
     "candy": "Weedle Candy",
-    
+    "candy_count": 50,
     "egg": "Not in Eggs",
     "spawn_chance": 0.44,
     "avg_spawns": 44,
@@ -340,8 +420,14 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-   
-   
+    "prev_evolution": [{
+      "num": "013",
+      "name": "Weedle"
+    }],
+    "next_evolution": [{
+      "num": "015",
+      "name": "Beedrill"
+    }]
   }, {
     "id": 15,
     "num": "015",
@@ -365,7 +451,13 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-   
+    "prev_evolution": [{
+      "num": "013",
+      "name": "Weedle"
+    }, {
+      "num": "014",
+      "name": "Kakuna"
+    }]
   }, {
     "id": 16,
     "num": "016",
@@ -378,7 +470,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "1.8 kg",
     "candy": "Pidgey Candy",
-   
+    "candy_count": 12,
     "egg": "2 km",
     "spawn_chance": 15.98,
     "avg_spawns": 1.598,
@@ -391,7 +483,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "017",
+      "name": "Pidgeotto"
+    }, {
+      "num": "018",
+      "name": "Pidgeot"
+    }]
   }, {
     "id": 17,
     "num": "017",
@@ -404,7 +502,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.09 m",
     "weight": "30.0 kg",
     "candy": "Pidgey Candy",
-    
+    "candy_count": 50,
     "egg": "Not in Eggs",
     "spawn_chance": 1.02,
     "avg_spawns": 102,
@@ -414,8 +512,14 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-   
-   
+    "prev_evolution": [{
+      "num": "016",
+      "name": "Pidgey"
+    }],
+    "next_evolution": [{
+      "num": "018",
+      "name": "Pidgeot"
+    }]
   }, {
     "id": 18,
     "num": "018",
@@ -437,7 +541,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "016",
+      "name": "Pidgey"
+    }, {
+      "num": "017",
+      "name": "Pidgeotto"
+    }]
   }, {
     "id": 19,
     "num": "019",
@@ -449,7 +559,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "3.5 kg",
     "candy": "Rattata Candy",
-    
+    "candy_count": 25,
     "egg": "2 km",
     "spawn_chance": 13.05,
     "avg_spawns": 1.305,
@@ -461,7 +571,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
-  
+    "next_evolution": [{
+      "num": "020",
+      "name": "Raticate"
+    }]
   }, {
     "id": 20,
     "num": "020",
@@ -481,7 +594,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
-   
+    "prev_evolution": [{
+      "num": "019",
+      "name": "Rattata"
+    }]
   }, {
     "id": 21,
     "num": "021",
@@ -494,7 +610,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "2.0 kg",
     "candy": "Spearow Candy",
-   
+    "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 4.73,
     "avg_spawns": 473,
@@ -507,7 +623,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "022",
+      "name": "Fearow"
+    }]
   }, {
     "id": 22,
     "num": "022",
@@ -529,7 +648,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "021",
+      "name": "Spearow"
+    }]
   }, {
     "id": 23,
     "num": "023",
@@ -541,7 +663,7 @@ const  pokemon: Pokemon[] = [{
     "height": "2.01 m",
     "weight": "6.9 kg",
     "candy": "Ekans Candy",
-  
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.27,
     "avg_spawns": 227,
@@ -554,7 +676,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "next_evolution": [{
+      "num": "024",
+      "name": "Arbok"
+    }]
   }, {
     "id": 24,
     "num": "024",
@@ -575,7 +700,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-   
+    "prev_evolution": [{
+      "num": "023",
+      "name": "Ekans"
+    }]
   }, {
     "id": 25,
     "num": "025",
@@ -587,7 +715,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "6.0 kg",
     "candy": "Pikachu Candy",
-    
+    "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 0.21,
     "avg_spawns": 21,
@@ -596,7 +724,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Ground"
     ],
-  
+    "next_evolution": [{
+      "num": "026",
+      "name": "Raichu"
+    }]
   }, {
     "id": 26,
     "num": "026",
@@ -616,7 +747,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Ground"
     ],
-  
+    "prev_evolution": [{
+      "num": "025",
+      "name": "Pikachu"
+    }]
   }, {
     "id": 27,
     "num": "027",
@@ -628,7 +762,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "12.0 kg",
     "candy": "Sandshrew Candy",
- 
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 1.11,
     "avg_spawns": 111,
@@ -639,7 +773,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
-  
+    "next_evolution": [{
+      "num": "028",
+      "name": "Sandslash"
+    }]
   }, {
     "id": 28,
     "num": "028",
@@ -661,7 +798,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
- 
+    "prev_evolution": [{
+      "num": "027",
+      "name": "Sandshrew"
+    }]
   }, {
     "id": 29,
     "num": "029",
@@ -673,7 +813,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "7.0 kg",
     "candy": "Nidoran ♀ (Female) Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.38,
     "avg_spawns": 138,
@@ -686,8 +826,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-    
-  
+    "next_evolution": [{
+      "num": "030",
+      "name": "Nidorina"
+    }, {
+      "num": "031",
+      "name": "Nidoqueen"
+    }]
   }, {
     "id": 30,
     "num": "030",
@@ -699,7 +844,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "20.0 kg",
     "candy": "Nidoran ♀ (Female) Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.088,
     "avg_spawns": 8.8,
@@ -712,8 +857,14 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
- 
-  
+    "prev_evolution": [{
+      "num": "029",
+      "name": "Nidoran(Female)"
+    }],
+    "next_evolution": [{
+      "num": "031",
+      "name": "Nidoqueen"
+    }]
   }, {
     "id": 31,
     "num": "031",
@@ -737,7 +888,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "029",
+      "name": "Nidoran(Female)"
+    }, {
+      "num": "030",
+      "name": "Nidorina"
+    }]
   }, {
     "id": 32,
     "num": "032",
@@ -749,7 +906,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "9.0 kg",
     "candy": "Nidoran ♂ (Male) Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.31,
     "avg_spawns": 131,
@@ -762,7 +919,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "next_evolution": [{
+      "num": "033",
+      "name": "Nidorino"
+    }, {
+      "num": "034",
+      "name": "Nidoking"
+    }]
   }, {
     "id": 33,
     "num": "033",
@@ -774,7 +937,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.89 m",
     "weight": "19.5 kg",
     "candy": "Nidoran ♂ (Male) Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.083,
     "avg_spawns": 8.3,
@@ -784,8 +947,14 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
-   
+    "prev_evolution": [{
+      "num": "032",
+      "name": "Nidoran(Male)"
+    }],
+    "next_evolution": [{
+      "num": "034",
+      "name": "Nidoking"
+    }]
   }, {
     "id": 34,
     "num": "034",
@@ -809,7 +978,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "032",
+      "name": "Nidoran(Male)"
+    }, {
+      "num": "033",
+      "name": "Nidorino"
+    }]
   }, {
     "id": 35,
     "num": "035",
@@ -821,7 +996,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "7.5 kg",
     "candy": "Clefairy Candy",
-    
+    "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 0.92,
     "avg_spawns": 92,
@@ -833,7 +1008,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
-    
+    "next_evolution": [{
+      "num": "036",
+      "name": "Clefable"
+    }]
   }, {
     "id": 36,
     "num": "036",
@@ -853,7 +1031,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
- 
+    "prev_evolution": [{
+      "num": "035",
+      "name": "Clefairy"
+    }]
   }, {
     "id": 37,
     "num": "037",
@@ -865,7 +1046,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "9.9 kg",
     "candy": "Vulpix Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.22,
     "avg_spawns": 22,
@@ -879,7 +1060,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-    
+    "next_evolution": [{
+      "num": "038",
+      "name": "Ninetales"
+    }]
   }, {
     "id": 38,
     "num": "038",
@@ -901,7 +1085,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "037",
+      "name": "Vulpix"
+    }]
   }, {
     "id": 39,
     "num": "039",
@@ -913,7 +1100,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "5.5 kg",
     "candy": "Jigglypuff Candy",
-    
+    "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 0.39,
     "avg_spawns": 39,
@@ -922,7 +1109,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
- 
+    "next_evolution": [{
+      "num": "040",
+      "name": "Wigglytuff"
+    }]
   }, {
     "id": 40,
     "num": "040",
@@ -942,7 +1132,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
-  
+    "prev_evolution": [{
+      "num": "039",
+      "name": "Jigglypuff"
+    }]
   }, {
     "id": 41,
     "num": "041",
@@ -955,7 +1148,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "7.5 kg",
     "candy": "Zubat Candy",
-    
+    "candy_count": 50,
     "egg": "2 km",
     "spawn_chance": 6.52,
     "avg_spawns": 652,
@@ -970,7 +1163,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "042",
+      "name": "Golbat"
+    }]
   }, {
     "id": 42,
     "num": "042",
@@ -994,7 +1190,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-
+    "prev_evolution": [{
+      "num": "041",
+      "name": "Zubat"
+    }]
   }, {
     "id": 43,
     "num": "043",
@@ -1007,7 +1206,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "5.4 kg",
     "candy": "Oddish Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.02,
     "avg_spawns": 102,
@@ -1019,7 +1218,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
- 
+    "next_evolution": [{
+      "num": "044",
+      "name": "Gloom"
+    }, {
+      "num": "045",
+      "name": "Vileplume"
+    }]
   }, {
     "id": 44,
     "num": "044",
@@ -1032,7 +1237,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "8.6 kg",
     "candy": "Oddish Candy",
-   
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.064,
     "avg_spawns": 6.4,
@@ -1044,8 +1249,14 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
- 
-  
+    "prev_evolution": [{
+      "num": "043",
+      "name": "Oddish"
+    }],
+    "next_evolution": [{
+      "num": "045",
+      "name": "Vileplume"
+    }]
   }, {
     "id": 45,
     "num": "045",
@@ -1069,7 +1280,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
-
+    "prev_evolution": [{
+      "num": "043",
+      "name": "Oddish"
+    }, {
+      "num": "044",
+      "name": "Gloom"
+    }]
   }, {
     "id": 46,
     "num": "046",
@@ -1082,7 +1299,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "5.4 kg",
     "candy": "Paras Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.36,
     "avg_spawns": 236,
@@ -1096,7 +1313,10 @@ const  pokemon: Pokemon[] = [{
       "Bug",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "047",
+      "name": "Parasect"
+    }]
   }, {
     "id": 47,
     "num": "047",
@@ -1122,7 +1342,10 @@ const  pokemon: Pokemon[] = [{
       "Bug",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "046",
+      "name": "Paras"
+    }]
   }, {
     "id": 48,
     "num": "048",
@@ -1135,7 +1358,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "30.0 kg",
     "candy": "Venonat Candy",
-
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.28,
     "avg_spawns": 228,
@@ -1150,7 +1373,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-  
+    "next_evolution": [{
+      "num": "049",
+      "name": "Venomoth"
+    }]
   }, {
     "id": 49,
     "num": "049",
@@ -1174,7 +1400,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Rock"
     ],
-   
+    "prev_evolution": [{
+      "num": "048",
+      "name": "Venonat"
+    }]
   }, {
     "id": 50,
     "num": "050",
@@ -1186,7 +1415,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.20 m",
     "weight": "0.8 kg",
     "candy": "Diglett Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.40,
     "avg_spawns": 40,
@@ -1197,7 +1426,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
-  
+    "next_evolution": [{
+      "num": "051",
+      "name": "Dugtrio"
+    }]
   }, {
     "id": 51,
     "num": "051",
@@ -1219,7 +1451,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
-  
+    "prev_evolution": [{
+      "num": "050",
+      "name": "Diglett"
+    }]
   }, {
     "id": 52,
     "num": "052",
@@ -1231,7 +1466,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "4.2 kg",
     "candy": "Meowth Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.86,
     "avg_spawns": 86,
@@ -1240,7 +1475,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
- 
+    "next_evolution": [{
+      "num": "053",
+      "name": "Persian"
+    }]
   }, {
     "id": 53,
     "num": "053",
@@ -1260,7 +1498,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
- 
+    "prev_evolution": [{
+      "num": "052",
+      "name": "Meowth"
+    }]
   }, {
     "id": 54,
     "num": "054",
@@ -1272,7 +1513,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "19.6 kg",
     "candy": "Psyduck Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.54,
     "avg_spawns": 254,
@@ -1282,7 +1523,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-   
+    "next_evolution": [{
+      "num": "055",
+      "name": "Golduck"
+    }]
   }, {
     "id": 55,
     "num": "055",
@@ -1303,7 +1547,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "prev_evolution": [{
+      "num": "054",
+      "name": "Psyduck"
+    }]
   }, {
     "id": 56,
     "num": "056",
@@ -1315,7 +1562,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "28.0 kg",
     "candy": "Mankey Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.92,
     "avg_spawns": 92,
@@ -1329,7 +1576,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
- 
+    "next_evolution": [{
+      "num": "057",
+      "name": "Primeape"
+    }]
   }, {
     "id": 57,
     "num": "057",
@@ -1351,7 +1601,10 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
-  
+    "prev_evolution": [{
+      "num": "056",
+      "name": "Mankey"
+    }]
   }, {
     "id": 58,
     "num": "058",
@@ -1363,7 +1616,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.71 m",
     "weight": "19.0 kg",
     "candy": "Growlithe Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.92,
     "avg_spawns": 92,
@@ -1377,7 +1630,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-  
+    "next_evolution": [{
+      "num": "059",
+      "name": "Arcanine"
+    }]
   }, {
     "id": 59,
     "num": "059",
@@ -1399,7 +1655,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-   
+    "prev_evolution": [{
+      "num": "058",
+      "name": "Growlithe"
+    }]
   }, {
     "id": 60,
     "num": "060",
@@ -1411,7 +1670,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "12.4 kg",
     "candy": "Poliwag Candy",
-  
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 2.19,
     "avg_spawns": 219,
@@ -1424,7 +1683,13 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-
+    "next_evolution": [{
+      "num": "061",
+      "name": "Poliwhirl"
+    }, {
+      "num": "062",
+      "name": "Poliwrath"
+    }]
   }, {
     "id": 61,
     "num": "061",
@@ -1436,7 +1701,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "20.0 kg",
     "candy": "Poliwag Candy",
-  
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.13,
     "avg_spawns": 13,
@@ -1446,8 +1711,14 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
-
+    "prev_evolution": [{
+      "num": "060",
+      "name": "Poliwag"
+    }],
+    "next_evolution": [{
+      "num": "062",
+      "name": "Poliwrath"
+    }]
   }, {
     "id": 62,
     "num": "062",
@@ -1472,7 +1743,13 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
-    
+    "prev_evolution": [{
+      "num": "060",
+      "name": "Poliwag"
+    }, {
+      "num": "061",
+      "name": "Poliwhirl"
+    }]
   }, {
     "id": 63,
     "num": "063",
@@ -1484,7 +1761,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.89 m",
     "weight": "19.5 kg",
     "candy": "Abra Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 0.42,
     "avg_spawns": 42,
@@ -1498,7 +1775,13 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
- 
+    "next_evolution": [{
+      "num": "064",
+      "name": "Kadabra"
+    }, {
+      "num": "065",
+      "name": "Alakazam"
+    }]
   }, {
     "id": 64,
     "num": "064",
@@ -1510,7 +1793,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.30 m",
     "weight": "56.5 kg",
     "candy": "Abra Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.027,
     "avg_spawns": 2.7,
@@ -1521,8 +1804,14 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
- 
+    "prev_evolution": [{
+      "num": "063",
+      "name": "Abra"
+    }],
+    "next_evolution": [{
+      "num": "065",
+      "name": "Alakazam"
+    }]
   }, {
     "id": 65,
     "num": "065",
@@ -1544,7 +1833,13 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
- 
+    "prev_evolution": [{
+      "num": "063",
+      "name": "Abra"
+    }, {
+      "num": "064",
+      "name": "Kadabra"
+    }]
   }, {
     "id": 66,
     "num": "066",
@@ -1556,7 +1851,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "19.5 kg",
     "candy": "Machop Candy",
-   
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 0.49,
     "avg_spawns": 49,
@@ -1570,7 +1865,13 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
-
+    "next_evolution": [{
+      "num": "067",
+      "name": "Machoke"
+    }, {
+      "num": "068",
+      "name": "Machamp"
+    }]
   }, {
     "id": 67,
     "num": "067",
@@ -1582,7 +1883,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.50 m",
     "weight": "70.5 kg",
     "candy": "Machop Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.034,
     "avg_spawns": 3.4,
@@ -1593,8 +1894,14 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
-  
-  
+    "prev_evolution": [{
+      "num": "066",
+      "name": "Machop"
+    }],
+    "next_evolution": [{
+      "num": "068",
+      "name": "Machamp"
+    }]
   }, {
     "id": 68,
     "num": "068",
@@ -1616,7 +1923,13 @@ const  pokemon: Pokemon[] = [{
       "Psychic",
       "Fairy"
     ],
- 
+    "prev_evolution": [{
+      "num": "066",
+      "name": "Machop"
+    }, {
+      "num": "067",
+      "name": "Machoke"
+    }]
   }, {
     "id": 69,
     "num": "069",
@@ -1629,7 +1942,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.71 m",
     "weight": "4.0 kg",
     "candy": "Bellsprout Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.15,
     "avg_spawns": 115,
@@ -1641,7 +1954,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
-
+    "next_evolution": [{
+      "num": "070",
+      "name": "Weepinbell"
+    }, {
+      "num": "071",
+      "name": "Victreebel"
+    }]
   }, {
     "id": 70,
     "num": "070",
@@ -1654,7 +1973,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "6.4 kg",
     "candy": "Bellsprout Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.072,
     "avg_spawns": 7.2,
@@ -1666,8 +1985,14 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
-    
- 
+    "prev_evolution": [{
+      "num": "069",
+      "name": "Bellsprout"
+    }],
+    "next_evolution": [{
+      "num": "071",
+      "name": "Victreebel"
+    }]
   }, {
     "id": 71,
     "num": "071",
@@ -1691,7 +2016,13 @@ const  pokemon: Pokemon[] = [{
       "Flying",
       "Psychic"
     ],
- 
+    "prev_evolution": [{
+      "num": "069",
+      "name": "Bellsprout"
+    }, {
+      "num": "070",
+      "name": "Weepinbell"
+    }]
   }, {
     "id": 72,
     "num": "072",
@@ -1704,7 +2035,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.89 m",
     "weight": "45.5 kg",
     "candy": "Tentacool Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.81,
     "avg_spawns": 81,
@@ -1715,7 +2046,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "next_evolution": [{
+      "num": "073",
+      "name": "Tentacruel"
+    }]
   }, {
     "id": 73,
     "num": "073",
@@ -1738,7 +2072,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
- 
+    "prev_evolution": [{
+      "num": "072",
+      "name": "Tentacool"
+    }]
   }, {
     "id": 74,
     "num": "074",
@@ -1751,7 +2088,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "20.0 kg",
     "candy": "Geodude Candy",
-   
+    "candy_count": 25,
     "egg": "2 km",
     "spawn_chance": 1.19,
     "avg_spawns": 119,
@@ -1768,7 +2105,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Steel"
     ],
-   
+    "next_evolution": [{
+      "num": "075",
+      "name": "Graveler"
+    }, {
+      "num": "076",
+      "name": "Golem"
+    }]
   }, {
     "id": 75,
     "num": "075",
@@ -1781,7 +2124,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "105.0 kg",
     "candy": "Geodude Candy",
-   
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.071,
     "avg_spawns": 7.1,
@@ -1798,8 +2141,14 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Steel"
     ],
-  
-  
+    "prev_evolution": [{
+      "num": "074",
+      "name": "Geodude"
+    }],
+    "next_evolution": [{
+      "num": "076",
+      "name": "Golem"
+    }]
   }, {
     "id": 76,
     "num": "076",
@@ -1825,7 +2174,13 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Steel"
     ],
-
+    "prev_evolution": [{
+      "num": "074",
+      "name": "Geodude"
+    }, {
+      "num": "075",
+      "name": "Graveler"
+    }]
   }, {
     "id": 77,
     "num": "077",
@@ -1837,7 +2192,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "30.0 kg",
     "candy": "Ponyta Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.51,
     "avg_spawns": 51,
@@ -1851,7 +2206,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
- 
+    "next_evolution": [{
+      "num": "078",
+      "name": "Rapidash"
+    }]
   }, {
     "id": 78,
     "num": "078",
@@ -1873,7 +2231,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
- 
+    "prev_evolution": [{
+      "num": "077",
+      "name": "Ponyta"
+    }]
   }, {
     "id": 79,
     "num": "079",
@@ -1886,7 +2247,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.19 m",
     "weight": "36.0 kg",
     "candy": "Slowpoke Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 1.05,
     "avg_spawns": 105,
@@ -1899,7 +2260,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
+    "next_evolution": [{
+      "num": "080",
+      "name": "Slowbro"
+    }]
   }, {
     "id": 80,
     "num": "080",
@@ -1924,7 +2288,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-   
+    "prev_evolution": [{
+      "num": "079",
+      "name": "Slowpoke"
+    }]
   }, {
     "id": 81,
     "num": "081",
@@ -1936,7 +2303,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "6.0 kg",
     "candy": "Magnemite Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.71,
     "avg_spawns": 71,
@@ -1950,7 +2317,10 @@ const  pokemon: Pokemon[] = [{
       "Water",
       "Ground"
     ],
-  
+    "next_evolution": [{
+      "num": "082",
+      "name": "Magneton"
+    }]
   }, {
     "id": 82,
     "num": "082",
@@ -1972,7 +2342,10 @@ const  pokemon: Pokemon[] = [{
       "Water",
       "Ground"
     ],
- 
+    "prev_evolution": [{
+      "num": "081",
+      "name": "Magnemite"
+    }]
   }, {
     "id": 83,
     "num": "083",
@@ -2006,7 +2379,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.40 m",
     "weight": "39.2 kg",
     "candy": "Doduo Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.52,
     "avg_spawns": 52,
@@ -2019,7 +2392,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-   
+    "next_evolution": [{
+      "num": "085",
+      "name": "Dodrio"
+    }]
   }, {
     "id": 85,
     "num": "085",
@@ -2041,7 +2417,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
- 
+    "prev_evolution": [{
+      "num": "084",
+      "name": "Doduo"
+    }]
   }, {
     "id": 86,
     "num": "086",
@@ -2053,7 +2432,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.09 m",
     "weight": "90.0 kg",
     "candy": "Seel Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.28,
     "avg_spawns": 28,
@@ -2066,7 +2445,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-   
+    "next_evolution": [{
+      "num": "087",
+      "name": "Dewgong"
+    }]
   }, {
     "id": 87,
     "num": "087",
@@ -2090,7 +2472,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "086",
+      "name": "Seel"
+    }]
   }, {
     "id": 88,
     "num": "088",
@@ -2102,7 +2487,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.89 m",
     "weight": "30.0 kg",
     "candy": "Grimer Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.052,
     "avg_spawns": 5.2,
@@ -2112,7 +2497,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "next_evolution": [{
+      "num": "089",
+      "name": "Muk"
+    }]
   }, {
     "id": 89,
     "num": "089",
@@ -2133,7 +2521,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "088",
+      "name": "Grimer"
+    }]
   }, {
     "id": 90,
     "num": "090",
@@ -2145,7 +2536,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "4.0 kg",
     "candy": "Shellder Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.52,
     "avg_spawns": 52,
@@ -2155,7 +2546,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-   
+    "next_evolution": [{
+      "num": "091",
+      "name": "Cloyster"
+    }]
   }, {
     "id": 91,
     "num": "091",
@@ -2179,7 +2573,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "090",
+      "name": "Shellder"
+    }]
   }, {
     "id": 92,
     "num": "092",
@@ -2192,7 +2589,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.30 m",
     "weight": "0.1 kg",
     "candy": "Gastly Candy",
-    
+    "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 0.79,
     "avg_spawns": 79,
@@ -2204,7 +2601,13 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-   
+    "next_evolution": [{
+      "num": "093",
+      "name": "Haunter"
+    }, {
+      "num": "094",
+      "name": "Gengar"
+    }]
   }, {
     "id": 93,
     "num": "093",
@@ -2217,7 +2620,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.60 m",
     "weight": "0.1 kg",
     "candy": "Gastly Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.052,
     "avg_spawns": 5.2,
@@ -2232,8 +2635,14 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
-   
+    "prev_evolution": [{
+      "num": "092",
+      "name": "Gastly"
+    }],
+    "next_evolution": [{
+      "num": "094",
+      "name": "Gengar"
+    }]
   }, {
     "id": 94,
     "num": "094",
@@ -2257,7 +2666,13 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
- 
+    "prev_evolution": [{
+      "num": "092",
+      "name": "Gastly"
+    }, {
+      "num": "093",
+      "name": "Haunter"
+    }]
   }, {
     "id": 95,
     "num": "095",
@@ -2294,7 +2709,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "32.4 kg",
     "candy": "Drowzee Candy",
-  
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 3.21,
     "avg_spawns": 321,
@@ -2308,7 +2723,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-   
+    "next_evolution": [{
+      "num": "097",
+      "name": "Hypno"
+    }]
   }, {
     "id": 97,
     "num": "097",
@@ -2330,7 +2748,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
+    "prev_evolution": [{
+      "num": "096",
+      "name": "Drowzee"
+    }]
   }, {
     "id": 98,
     "num": "098",
@@ -2342,7 +2763,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "6.5 kg",
     "candy": "Krabby Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.12,
     "avg_spawns": 212,
@@ -2355,7 +2776,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "next_evolution": [{
+      "num": "099",
+      "name": "Kingler"
+    }]
   }, {
     "id": 99,
     "num": "099",
@@ -2376,7 +2800,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-
+    "prev_evolution": [{
+      "num": "098",
+      "name": "Krabby"
+    }]
   }, {
     "id": 100,
     "num": "100",
@@ -2388,7 +2815,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "10.4 kg",
     "candy": "Voltorb Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.65,
     "avg_spawns": 65,
@@ -2400,7 +2827,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Ground"
     ],
-  
+    "next_evolution": [{
+      "num": "101",
+      "name": "Electrode"
+    }]
   }, {
     "id": 101,
     "num": "101",
@@ -2420,7 +2850,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Ground"
     ],
-   
+    "prev_evolution": [{
+      "num": "100",
+      "name": "Voltorb"
+    }]
   }, {
     "id": 102,
     "num": "102",
@@ -2433,7 +2866,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "2.5 kg",
     "candy": "Exeggcute Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.78,
     "avg_spawns": 78,
@@ -2451,7 +2884,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
+    "next_evolution": [{
+      "num": "103",
+      "name": "Exeggutor"
+    }]
   }, {
     "id": 103,
     "num": "103",
@@ -2478,7 +2914,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-   
+    "prev_evolution": [{
+      "num": "102",
+      "name": "Exeggcute"
+    }]
   }, {
     "id": 104,
     "num": "104",
@@ -2490,7 +2929,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "6.5 kg",
     "candy": "Cubone Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.61,
     "avg_spawns": 61,
@@ -2501,7 +2940,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
-  
+    "next_evolution": [{
+      "num": "105",
+      "name": "Marowak"
+    }]
   }, {
     "id": 105,
     "num": "105",
@@ -2523,7 +2965,10 @@ const  pokemon: Pokemon[] = [{
       "Grass",
       "Ice"
     ],
-   
+    "prev_evolution": [{
+      "num": "104",
+      "name": "Cubone"
+    }]
   }, {
     "id": 106,
     "num": "106",
@@ -2596,7 +3041,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "1.0 kg",
     "candy": "Koffing Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.20,
     "avg_spawns": 20,
@@ -2606,7 +3051,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "next_evolution": [{
+      "num": "110",
+      "name": "Weezing"
+    }]
   }, {
     "id": 110,
     "num": "110",
@@ -2627,7 +3075,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Psychic"
     ],
-  
+    "prev_evolution": [{
+      "num": "109",
+      "name": "Koffing"
+    }]
   }, {
     "id": 111,
     "num": "111",
@@ -2640,7 +3091,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.99 m",
     "weight": "115.0 kg",
     "candy": "Rhyhorn Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.63,
     "avg_spawns": 63,
@@ -2654,7 +3105,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Steel"
     ],
-   
+    "next_evolution": [{
+      "num": "112",
+      "name": "Rhydon"
+    }]
   }, {
     "id": 112,
     "num": "112",
@@ -2680,7 +3134,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Steel"
     ],
-   
+    "prev_evolution": [{
+      "num": "111",
+      "name": "Rhyhorn"
+    }]
   }, {
     "id": 113,
     "num": "113",
@@ -2753,7 +3210,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "8.0 kg",
     "candy": "Horsea Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 1.13,
     "avg_spawns": 113,
@@ -2763,7 +3220,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
- 
+    "next_evolution": [{
+      "num": "117",
+      "name": "Seadra"
+    }]
   }, {
     "id": 117,
     "num": "117",
@@ -2784,7 +3244,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
- 
+    "prev_evolution": [{
+      "num": "116",
+      "name": "Horsea"
+    }]
   }, {
     "id": 118,
     "num": "118",
@@ -2796,7 +3259,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.61 m",
     "weight": "15.0 kg",
     "candy": "Goldeen Candy",
-    
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 2.18,
     "avg_spawns": 218,
@@ -2809,7 +3272,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-    
+    "next_evolution": [{
+      "num": "119",
+      "name": "Seaking"
+    }]
   }, {
     "id": 119,
     "num": "119",
@@ -2830,7 +3296,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "prev_evolution": [{
+      "num": "118",
+      "name": "Goldeen"
+    }]
   }, {
     "id": 120,
     "num": "120",
@@ -2842,7 +3311,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.79 m",
     "weight": "34.5 kg",
     "candy": "Staryu Candy",
-   
+    "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 1.95,
     "avg_spawns": 195,
@@ -2855,7 +3324,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "next_evolution": [{
+      "num": "121",
+      "name": "Starmie"
+    }]
   }, {
     "id": 121,
     "num": "121",
@@ -2880,7 +3352,10 @@ const  pokemon: Pokemon[] = [{
       "Ghost",
       "Dark"
     ],
-  
+    "prev_evolution": [{
+      "num": "120",
+      "name": "Staryu"
+    }]
   }, {
     "id": 122,
     "num": "122",
@@ -3042,7 +3517,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.89 m",
     "weight": "10.0 kg",
     "candy": "Magikarp Candy",
-   
+    "candy_count": 400,
     "egg": "2 km",
     "spawn_chance": 4.78,
     "avg_spawns": 478,
@@ -3055,7 +3530,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
-  
+    "next_evolution": [{
+      "num": "130",
+      "name": "Gyarados"
+    }]
   }, {
     "id": 130,
     "num": "130",
@@ -3077,7 +3555,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "129",
+      "name": "Magikarp"
+    }]
   }, {
     "id": 131,
     "num": "131",
@@ -3131,7 +3612,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.30 m",
     "weight": "6.5 kg",
     "candy": "Eevee Candy",
-    
+    "candy_count": 25,
     "egg": "10 km",
     "spawn_chance": 2.75,
     "avg_spawns": 275,
@@ -3143,7 +3624,16 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Fighting"
     ],
-   
+    "next_evolution": [{
+      "num": "134",
+      "name": "Vaporeon"
+    }, {
+      "num": "135",
+      "name": "Jolteon"
+    }, {
+      "num": "136",
+      "name": "Flareon"
+    }]
   }, {
     "id": 134,
     "num": "134",
@@ -3164,7 +3654,10 @@ const  pokemon: Pokemon[] = [{
       "Electric",
       "Grass"
     ],
- 
+    "prev_evolution": [{
+      "num": "133",
+      "name": "Eevee"
+    }]
   }, {
     "id": 135,
     "num": "135",
@@ -3184,7 +3677,10 @@ const  pokemon: Pokemon[] = [{
     "weaknesses": [
       "Ground"
     ],
- 
+    "prev_evolution": [{
+      "num": "133",
+      "name": "Eevee"
+    }]
   }, {
     "id": 136,
     "num": "136",
@@ -3206,7 +3702,10 @@ const  pokemon: Pokemon[] = [{
       "Ground",
       "Rock"
     ],
-  
+    "prev_evolution": [{
+      "num": "133",
+      "name": "Eevee"
+    }]
   }, {
     "id": 137,
     "num": "137",
@@ -3238,7 +3737,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.41 m",
     "weight": "7.5 kg",
     "candy": "Omanyte Candy",
-  
+    "candy_count": 50,
     "egg": "10 km",
     "spawn_chance": 0.14,
     "avg_spawns": 14,
@@ -3250,7 +3749,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Ground"
     ],
-  
+    "next_evolution": [{
+      "num": "139",
+      "name": "Omastar"
+    }]
   }, {
     "id": 139,
     "num": "139",
@@ -3274,7 +3776,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Ground"
     ],
-
+    "prev_evolution": [{
+      "num": "138",
+      "name": "Omanyte"
+    }]
   }, {
     "id": 140,
     "num": "140",
@@ -3287,7 +3792,7 @@ const  pokemon: Pokemon[] = [{
     "height": "0.51 m",
     "weight": "11.5 kg",
     "candy": "Kabuto Candy",
-    
+    "candy_count": 50,
     "egg": "10 km",
     "spawn_chance": 0.10,
     "avg_spawns": 10,
@@ -3302,7 +3807,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Ground"
     ],
-  
+    "next_evolution": [{
+      "num": "141",
+      "name": "Kabutops"
+    }]
   }, {
     "id": 141,
     "num": "141",
@@ -3326,7 +3834,10 @@ const  pokemon: Pokemon[] = [{
       "Fighting",
       "Ground"
     ],
-  
+    "prev_evolution": [{
+      "num": "140",
+      "name": "Kabuto"
+    }]
   }, {
     "id": 142,
     "num": "142",
@@ -3447,7 +3958,7 @@ const  pokemon: Pokemon[] = [{
     "height": "1.80 m",
     "weight": "3.3 kg",
     "candy": "Dratini Candy",
-  
+    "candy_count": 25,
     "egg": "10 km",
     "spawn_chance": 0.30,
     "avg_spawns": 30,
@@ -3461,7 +3972,13 @@ const  pokemon: Pokemon[] = [{
       "Dragon",
       "Fairy"
     ],
-   
+    "next_evolution": [{
+      "num": "148",
+      "name": "Dragonair"
+    }, {
+      "num": "149",
+      "name": "Dragonite"
+    }]
   }, {
     "id": 148,
     "num": "148",
@@ -3473,7 +3990,7 @@ const  pokemon: Pokemon[] = [{
     "height": "3.99 m",
     "weight": "16.5 kg",
     "candy": "Dratini Candy",
-    
+    "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.02,
     "avg_spawns": 2,
@@ -3484,8 +4001,14 @@ const  pokemon: Pokemon[] = [{
       "Dragon",
       "Fairy"
     ],
-  
- 
+    "prev_evolution": [{
+      "num": "147",
+      "name": "Dratini"
+    }],
+    "next_evolution": [{
+      "num": "149",
+      "name": "Dragonite"
+    }]
   }, {
     "id": 149,
     "num": "149",
@@ -3509,7 +4032,13 @@ const  pokemon: Pokemon[] = [{
       "Dragon",
       "Fairy"
     ],
- 
+    "prev_evolution": [{
+      "num": "147",
+      "name": "Dratini"
+    }, {
+      "num": "148",
+      "name": "Dragonair"
+    }]
   }, {
     "id": 150,
     "num": "150",
